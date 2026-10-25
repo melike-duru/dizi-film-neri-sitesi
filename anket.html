@@ -1,0 +1,84 @@
+<DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anket</title>
+</head>
+<body>
+<h1>FİLM-DİZİ ÖNERİ ANKETİ</h1><br>
+
+<form id="önerianketi">
+<p>
+        <label for="kadi">Adınız:</label><br>
+        <input type="text" id="kadi" name="kullanici_adi" maxlength="30" required>
+    </p>   
+<p>
+        <label for="dmi_fmi">Daha çok hangisini tercih edersiniz?</label><br>
+        <select id="dmi_fmi" name="dmi_fmi" required>
+        <option value="dizi">Dizi</option>
+        <option value="film">Film</option>
+        </select>    
+    </p>
+<p>
+        <label for="tekrar_izlenen">Tekrar tekrar izlediğiniz bir dizi ya da film var mı varsa ne?</label><br>
+        <input type="text" id="tekrar_izlenen" name="tekrar_izlenen">
+    </p>
+<p>
+
+    <strong>Hangi türden\türlerden hoşlanırsınız?(Lütfen en az 1 tane seçin)</strong><br><br>
+    
+    <input type="checkbox" id="aksiyon" name="tur" value="aksiyon">
+    <label for="aksiyon">Aksiyon</label><br>
+
+    <input type="checkbox" id="animasyon" name="tur" value="animasyon">
+    <label for="animasyon">Animasyon</label><br>
+
+    <input type="checkbox" id="bilim_kurgu" name="tur" value="bilim_kurgu">
+    <label for="bilim_kurgu">Bilim Kurgu</label><br>
+
+    <input type="checkbox" id="dram" name="tur" value="dram">
+    <label for="dram">Dram</label><br>
+
+    <input type="checkbox" id="korku_gerilim" name="tur" value="korku_gerilim">
+    <label for="korku_gerilim">Korku-Gerilim</label><br>
+    
+    <input type="checkbox" id="komedi" name="tur" value="komedi">
+    <label for="komedi">Komedi</label><br>
+
+    <input type="checkbox" id="macera" name="tur" value="macera">
+    <label for="macera">Macera</label><br>
+
+    <input type="checkbox" id="romantik" name="tur" value="romantik">
+    <label for="romantik">Romantik</label><br>
+
+    <input type="checkbox" id="polisiye" name="tur" value="polisiye">
+    <label for="polisiye">Suç-Polisiye</label>
+    </p> 
+<p>
+    <label for="kac_sezon">Dizilerinizi seçerken sezon sayısı sizin için fark eder mi? Sizin için önemliyse kaç sezonluk dizi tercih edersiniz? </label><br>
+    
+    <select id="kac_sezon" name="kac_sezon" required>
+    <option value="az_sezonlu_minidizi">Mini Dizi (1-2 Sezon)</option>
+    <option value="orta_sezonludizi">3-4 Sezon</option>
+    <option value="cok_sezonludizi">Uzun Dizi (5+ Sezon)</option>
+    <option value="sezonu_farketmez">Fark Etmez</option>
+    </select>
+    </p>
+<p>
+    <label for="sinema_sikligi">Ne sıklıkla sinemaya gidersiniz?</label><br>
+    <input type="text" id="sinema_sikligi" name="sinema_sikligi" placeholder="Örn. yılda 2-3 defa" required> 
+    </p>
+<p>
+    Yeni çıkan filmleri sinemada izlemeyi mi tercih edersiniz evde mi? <br>
+    <input type="radio" id="sinema" name="sinemami_evmi" value="sinema" required>
+    <label for="sinema">Sinema</label>
+    <input type="radio" id="ev" name="sinemami_evmi" value="ev">
+    <label for="ev">Ev</label>
+    </p>
+<button type="submit">Anketi Gönder</button>
+</form>
+<p><strong>Anketime katıldığınız için teşekkür ederim!</strong></p>
+<p>Anasayfaya dönmek için <a href="index.html">buraya</a> tıklayınız.</p>
+</body>
+</html>
