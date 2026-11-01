@@ -1,0 +1,58 @@
+:root {
+    --sayfa-arkaplani: #031a61;
+    --baslik-rengi: #cfb92b;
+    --yazi-rengi: #f7fafa;
+    --link-rengi: #d9a509;
+    --select: #cf0408;
+    --vurgu: #ffe4c4;
+    --film-basligi: #8ddaf0;
+}
+
+body {
+    font-family: 'Segoe UI',Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--yazi-rengi);
+    background-color: var(--sayfa-arkaplani);
+}
+
+a {
+    color: var(--link-rengi);
+    text-decoration: none; }
+
+h1 {
+    color: var(--baslik-rengi);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem; }
+
+
+#anket input[type="checkbox"] {
+    width: 18px;          
+    height: 18px;
+    cursor: pointer;      
+    accent-color: var(--select); 
+}
+
+#anket input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer; 
+    accent-color: var(--select) }
+
+#anket select {
+    color: var(--select); 
+}
+
+.kalin {
+    font-weight: bold;
+    color: var(--vurgu); }
+
+.filmler-2026 h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem ;
+    color: var(--film-basligi)
+}
+
+.filmler-2026 {
+    text-align: center;
+    font-size: 1.1rem; }
