@@ -1,25 +1,72 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dizi-film önerileri</title>
     <link rel="stylesheet" href="stil.css">
+    <script src="js/uygulama.js" defer></script>
 </head>
 <body>
-<img src="images/resim2.jpg" alt="Film afişi" width="200">
-<header>
-<nav>
-<p><a href="index.html">Ana Sayfa</a></p>
-<p><a href="anket.html">Anket</a></p>
-<p><a href="filmler.html">2026'nın Güncel Filmleri</a></p>
-</nav>
-</header>
+
+<header class="top-bar">
+        <div class="welcome-text">Hoş Geldiniz</div>
+
+        <div class="right-section">
+        <div class="hamburger-menu" id="hamburger-ac">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="account-links">
+            <a href="kayit.html">Hesap Aç / Giriş Yap</a>
+        </div>
+        </div>
+    </header>
+    <nav id="yan-menu" class="yan-menu gizli">
+    <button id="menu-kapat" class="a">X</button>
+    <ul>    
+        <li><a href="index.html" class="aktif">Ana Sayfa</a></li>
+        <li><a href="anket.html">Anket Sayfasi</a></li>
+        <li><a href="filmler.html">2026 Filmleri</a></li>
+        <li><a href="turler.html">Film Türleri ve İçerikleri</a></li>
+        <li><a href="haberler.html">Güncel Haberler</a></li>
+    </ul>
+    </nav>
+<nav class="genre-nav">
+        <ul class="genre-list">
+            <li><a href="turler.html">Aksiyon</a></li>
+            <li><a href="turler.html">Animasyon</a></li>
+            <li><a href="turler.html">Korku-Gerilim</a></li>
+            <li><a href="turler.html">Komedi</a></li>
+            <li><a href="turler.html">Bilim-Kurgu</a></li>
+            <li><a href="turler.html">Romantik</a></li>
+            <li><a href="turler.html">Dram</a></li>
+            <li><a href="turler.html">Suç-Polisiye</a></li>
+            <li><a href="turler.html">Macera</a></li>
+        </ul>
+    </nav>
 <main>
-<section id="baslangic">
-<h1>Hoşgeldiniz</h1>
+<section class="anasayfa-imgs">
+            <div class="anasayfa-foto">
+                <img src="images/lacasapapel.jpg" alt="Afiş 1">
+            </div>
+            <div class="anasayfa-foto">
+                <img src="images/resim2.jpg" alt="Afiş 2">
+            </div>
+            <div class="anasayfa-foto">
+                <img src="images/howtolagin10days.jpg" alt="Afiş 3">
+            </div>
+        </section>
+
+<section>
+<h1>Sinema Dünyasını Keşfedin.</h1><br>
+</section>
+
+<section>
 <p class="kalin">Bu sayfada sizi neler bekliyor?</p>
 </section>
+
 <section>
 <ul>
 <li>Sinema dünyasıyla ilgili <span class="kalin">en güncel</span> haberler.</li>
@@ -27,9 +74,10 @@
 <li>İzlediğiniz içeriklerle ilgili yorum ve fikir alışverişi yapabileceğiniz <span class="kalin">yorumlar kısmı</span>.</li>
 </ul>
 </section>
+
 </main>
-</body>
-</html>
 <footer>
     <p>&copy; 2026 Film ve Dizi Sayfası.</p>
 </footer>
+</body>
+</html>

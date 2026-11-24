@@ -1,11 +1,12 @@
 :root {
-    --sayfa-arkaplani: #031a61;
-    --baslik-rengi: #cfb92b;
-    --yazi-rengi: #f7fafa;
-    --link-rengi: #d9a509;
+    --sayfa-arkaplani: #0a0001;
+    --baslik-rengi: #c40e0e;
+    --yazi-rengi: #faf7f8;
+    --link-rengi: #61060d;
     --select: #cf0408;
-    --vurgu: #ffe4c4;
+    --vurgu: #f2f0ce;
     --film-basligi: #8ddaf0;
+    --acik-siyah: #333;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 }
 
 a {
-    color: var(--link-rengi);
+    color: var(--vurgu);
     text-decoration: none; }
 
 h1 {
@@ -55,4 +56,134 @@ h1 {
 
 .filmler-2026 {
     text-align: center;
-    font-size: 1.1rem; }
+    font-size: 1.1rem;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--acik-siyah);
+    margin-top: 40px;
+     }
+
+.anasayfa-imgs {
+    display: flex;              
+    justify-content: space-between; 
+    gap: 5px;                   
+    padding: 30px;
+    background-color: var(--sayfa-arkaplani) }
+
+.anasayfa-foto {
+    flex: 1;                     
+    height: 650px;                
+    overflow: hidden; }
+
+.anasayfa-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;            
+    transition: transform 0.3s ease; }
+
+
+.genre-list {
+    list-style: none;           
+    background-color: var(--yazi-rengi);    }  
+
+
+.genre-list li {
+    flex: 1;                     
+    text-align: center;            
+    border-right: 2px solid var(--link-rengi);   
+}
+
+
+.genre-list a {
+    display: block;            
+    padding: 15px 10px;             
+    text-decoration: none;
+    color: #333;                    
+    font-weight: bold;
+    font-size: 14px;   
+}
+
+
+.genre-list a:hover {
+    background-color: var(--baslik-rengi);      
+    color: #fff;                   
+}
+
+.welcome-text {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--baslik-rengi);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+
+.account-links {
+    font-size: 25px;
+    text-align: right; }
+
+.hamburger-menu {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: var(--yazi-rengi);
+    border: 2px solid var(--acik-siyah);
+    padding: 20px;
+   
+}
+
+.hamburger-menu span {
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: var(--acik-siyah); 
+    border-radius: 2px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    padding: 10px 20px;         
+}
+
+.right-section {
+    display: flex;
+    align-items: center;       
+    gap: 20px; }
+
+.yan-menu {
+    position: fixed;        
+    top: 0;                 
+    right: 0;
+    width: 260px;
+    height: 100vh;          
+    background-color: var(--sayfa-arkaplani);
+    border-left: 2px solid var(--baslik-rengi);
+    padding: 20px;          
+    box-shadow: -5px 0 15px rgba(0,0,0,0.8);           
+    z-index: 1000;          
+}
+
+.gizli {
+    display: none; }        
+#menu-kapat {
+    color: var(--baslik-rengi);
+    cursor: pointer;
+    display: block;         
+    margin-left: auto;      
+    font-size: 24px;
+}
+
+
+.yan-menu ul {
+    margin-top: 30px;      
+}
+
+.yan-menu a {
+    font-size: 19px;    
+    padding: 10px 14px; }
+
+.yan-menu a.aktif {
+    color: var(--baslik-rengi);
+    font-size: 19px; }
+
