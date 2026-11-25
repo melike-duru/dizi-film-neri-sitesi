@@ -7,6 +7,7 @@
     --vurgu: #f2f0ce;
     --film-basligi: #8ddaf0;
     --acik-siyah: #333;
+    --acik-mavi:#5363cf;
 }
 
 body {
@@ -72,16 +73,17 @@ h1 {
 .anasayfa-foto {
     flex: 1;                     
     height: 650px;                
-    overflow: hidden; }
+ }
 
 .anasayfa-foto img {
     width: 100%;
     height: 100%;
     object-fit: contain;            
-    transition: transform 0.3s ease; }
+ }
 
 
 .genre-list {
+    display: flex;
     list-style: none;           
     background-color: var(--yazi-rengi);    }  
 
@@ -165,7 +167,8 @@ h1 {
 }
 
 .gizli {
-    display: none; }        
+    display: none; }  
+
 #menu-kapat {
     color: var(--baslik-rengi);
     cursor: pointer;
@@ -187,3 +190,50 @@ h1 {
     color: var(--baslik-rengi);
     font-size: 19px; }
 
+h2 {
+    color: var(--select);
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+
+#giris-sayfasi , #kayit-sayfasi {
+    text-align: center;
+}
+
+#giris-sayfasi div , #kayit-sayfasi div {
+    margin-bottom: 30px; 
+    
+}
+
+#giris-sayfasi label , #kayit-sayfasi label {
+    display: block;
+    font-size: 25px;
+    color: var(--vurgu);
+}
+
+#giris-sayfasi input , #kayit-sayfasi input {
+    padding: 12px;
+    font-size: 16px;
+}
+
+#giris-sayfasi button[type="submit"] , #kayit-sayfasi button[type="submit"] {
+    padding: 12px;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.yazi {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--baslik-rengi);
+}
+
+#hesap-butonu , #giris-butonu {
+    background: none;
+    border: none;
+    color: var(--vurgu);
+    font-size: 25px;
+    cursor: pointer;
+}

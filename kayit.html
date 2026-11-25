@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Aç-Kaydol</title>
+    <link rel="stylesheet" href="stil.css">
+    <script src="js/uygulama.js" defer></script>
+</head>
+
+<body>
+<header class="top-bar">
+
+        <div class="right-section">
+        <div class="hamburger-menu" id="hamburger-ac">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
+    </header>
+
+<nav id="yan-menu" class="yan-menu gizli">
+    <button id="menu-kapat" class="a">X</button>
+    <ul>    
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="kayit.html" class="aktif">Kayıt Sayfası</a></li>
+    </ul>
+    </nav>
+
+
+<section id="giris-sayfasi">
+<h2>Kaydol/Hesap Aç</h2>
+
+<form id="giris-formu" class="giris-form-sorulari" method="post">
+
+<div>
+<label for="email-adresi">Eposta Adresiniz:</label>
+<input type="email" id="email-adresi" name="email-adresi" required>
+</div>
+
+<div>
+<label for="sifre">Şifrenizi girin:</label>
+<input type="password" id="sifre" name="sifre" required>
+</div>
+
+<button type="submit">Giriş Yap</button>
+
+<p class="yazi">Hesabınız yok mu, hemen <button type="button" id="hesap-butonu">buraya tıklayarak</button> yeni  hesap açın.</p>
+</form>
+</section>
+
+<section id="kayit-sayfasi" class="gizli">
+<h2>Hesap Aç</h2>
+
+<form id="kayit-formu" class="kayit-form-sorulari" method="post">
+
+<div>
+<label for="kullanici-adi">Kullanıcı Adınızı Giriniz:</label>
+<input type="text" id="kullanici-adi" name="kullanici-adi" required>
+</div>
+
+<div>
+<label for="email-adresi-2">Eposta Adresiniz:</label>
+<input type="email" id="email-adresi-2" name="email-adresi-2" required>
+</div>
+
+<div>
+<label for="sifre-2">Şifrenizi Girin:</label>
+<input type="password" id="sifre-2"  name="sifre-2" required>
+</div>
+
+<div>
+<label for="sifre-dogrulama">Şifrenizi Tekrardan Girin:</label>
+<input type="password" id="sifre-dogrulama" name="sifre-dogrulama" required>
+</div>
+
+<button type="submit">Hesap Oluştur</button>
+<p class="yazi">Zaten hesabınız var mı?<button type="button" id="giris-butonu"> Giriş yapın</button>.</p>
+
+</form>
+</section>
+
+</body>
+</html>
